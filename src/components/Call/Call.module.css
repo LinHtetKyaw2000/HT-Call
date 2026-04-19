@@ -1,0 +1,244 @@
+.popupWindow {
+  position: fixed;
+  z-index: 1200;
+  touch-action: none;
+  user-select: none;
+}
+
+.popupFullscreen {
+  left: 0 !important;
+  top: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+}
+
+.incomingPopupWrap {
+  width: min(320px, calc(100vw - 24px));
+}
+
+.incomingCard {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid #ececec;
+}
+
+.incomingCardFullscreen {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  justify-content: center;
+  gap: 12px;
+}
+
+.fullscreenBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.incomingCard img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.incomingCard h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.incomingCard p {
+  margin: 0;
+  color: #888;
+  font-size: 0.84rem;
+}
+
+.incomingActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+  width: 100%;
+}
+
+.answer {
+  flex: 1;
+  padding: 10px 12px;
+  background: #31c48d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.decline {
+  flex: 1;
+  padding: 10px 12px;
+  background: #e03131;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.callPopup {
+  width: min(360px, calc(100vw - 24px));
+}
+
+.callWindow {
+  position: relative;
+  background: #141425;
+  border: 1px solid #2d2d46;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  color: #fff;
+}
+
+.callWindow .fullscreenBtn {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.callWindowFullscreen {
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.callTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.callTop img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.callTop h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.callStatus {
+  margin: 2px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.8rem;
+}
+
+.videoPanel {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0d0d18;
+}
+
+.callWindowFullscreen .videoPanel {
+  flex: 1;
+  height: auto;
+}
+
+.remoteVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.localVideo {
+  position: absolute;
+  width: 92px;
+  height: 68px;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.voicePanel {
+  width: 100%;
+  height: 110px;
+  border-radius: 12px;
+  background: #1a1a2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.callWindowFullscreen .voicePanel {
+  flex: 1;
+  height: auto;
+}
+
+.voicePanel p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}
+
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ctrl {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ctrl:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.endBtn {
+  background: #e03131;
+}
+
+.endBtn:hover {
+  background: #c92a2a;
+}

@@ -1,0 +1,155 @@
+.sidebar {
+  width: 100%;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  padding-top: max(14px, env(safe-area-inset-top));
+  background: #0a0a0a;
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.me img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.me span {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.logoutBtn {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #aaa;
+  font-size: 1.1rem;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.logoutBtn:hover {
+  color: #fff;
+  background: #333;
+}
+
+.searchBox {
+  padding: 10px 14px;
+  border-bottom: 1px solid #1a1a1a;
+  background: #0a0a0a;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #2a2a2a;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.searchBox input::placeholder {
+  color: #555;
+}
+
+.searchBox input:focus {
+  border-color: #444;
+}
+
+.userList {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.userItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid #161616;
+}
+
+.userItem:active {
+  background: #1a1a1a;
+}
+
+.userItem.active {
+  background: #1a1a1a;
+}
+
+.userItem img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.userInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.email {
+  display: block;
+  font-size: 0.8rem;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.online {
+  background: #31c48d;
+}
+
+.offline {
+  background: #333;
+}
+
+.empty {
+  text-align: center;
+  color: #444;
+  padding: 40px 10px;
+  font-size: 0.95rem;
+}
